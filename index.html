@@ -1,72 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
     <!--=============== FAVICON ===============-->
-    <link rel="stylesheet" href="" />
+    <link href="" rel="stylesheet"/>
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
+    <link href="" rel="stylesheet"/>
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link href="assets/css/styles.css" rel="stylesheet"/>
 
     <title>E-commerce Website</title>
-  </head>
-  <body>
-    <!--=============== HEADER ===============-->
-    <header class="header">
-      <div class="header__top">
+</head>
+<body>
+<!--=============== HEADER ===============-->
+<header class="header">
+    <div class="header__top">
         <div class="header__container container">
-          <div class="header__contact">
-            <span>(+84) 000 111</span>
-            <span>Our location</span>
-          </div>
-          <p class="header__alert-news">
-            Super Value Deals - Save more with coupons
-          </p>
-          <a href="login-register.html" class="header__top-action"
+            <div class="header__contact">
+                <span>(+84) 000 111</span>
+                <span>Our location</span>
+            </div>
+            <p class="header__alert-news">
+                Super Value Deals - Save more with coupons
+            </p>
+            <a class="header__top-action" href="login-register.html"
             >Login / Sign Up</a
-          >
+            >
         </div>
-      </div>
-    </header>
+    </div>
+    <nav class="nav container">
+        <a class="nav__logo" href="">
+            <img alt="" class="nav__logo-img" src="assets/img/logo.svg">
+        </a>
 
-    <!--=============== MAIN ===============-->
-    <main class="main">
-      <!--=============== HOME ===============-->
-      <section class="home">
-        
-      </section>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link active-link" href="index.html">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="accounts.html">My Account</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="compare.html">Compare</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="login-register.html">Login</a>
+                </li>
+            </ul>
 
-      <!--=============== CATEGORIES ===============-->
-      <section class="categories"></section>
+            <div class="header__search">
+                <label>
+                    <input type="text" class="form__input" placeholder="Search...">
+                </label>
+                <button class="search__btn">
+                    <img src="assets/img/search.png" alt="">
+                </button>
+            </div>
 
-      <!--=============== PRODUCTS ===============-->
-      <section class="products"></section>
+        </div>
 
-      <!--=============== DEALS ===============-->
-      <section class="deals"></section>
+        <div class="header__user-actions">
+            <a href="wishlist.html" class="header__action-btn">
+                <img src="assets/img/icon-heart.svg" alt="">
+                <span class="count">3</span>
+            </a>
 
-      <!--=============== NEW ARRIVALS ===============-->
-      <section class="new__arrivals"></section>
+            <a href="cart.html" class="header__action-btn">
+                <img src="assets/img/icon-cart.svg" alt="">
+                <span class="count">3</span>
+            </a>
+        </div>
 
-      <!--=============== SHOWCASE ===============-->
-      <section class="showcase"></section>
+    </nav>
+</header>
 
-      <!--=============== NEWSLETTER ===============-->
-      <section class="newsletter"></section>
-    </main>
+<!--=============== MAIN ===============-->
+<main class="main">
+    <!--=============== HOME ===============-->
+    <section class="home">
 
-    <!--=============== FOOTER ===============-->
-    <footer class="footer"></footer>
+    </section>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <!--=============== CATEGORIES ===============-->
+    <section class="categories"></section>
 
-    <!--=============== MAIN JS ===============-->
-    <script src=""></script>
-  </body>
+    <!--=============== PRODUCTS ===============-->
+    <section class="products"></section>
+
+    <!--=============== DEALS ===============-->
+    <section class="deals"></section>
+
+    <!--=============== NEW ARRIVALS ===============-->
+    <section class="new__arrivals"></section>
+
+    <!--=============== SHOWCASE ===============-->
+    <section class="showcase"></section>
+
+    <!--=============== NEWSLETTER ===============-->
+    <section class="newsletter"></section>
+</main>
+
+<!--=============== FOOTER ===============-->
+<footer class="footer"></footer>
+
+<!--=============== SWIPER JS ===============-->
+<script src=""></script>
+
+<!--=============== MAIN JS ===============-->
+<script src=""></script>
+</body>
 </html>
