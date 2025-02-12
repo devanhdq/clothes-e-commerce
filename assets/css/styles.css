@@ -392,8 +392,30 @@ input {
 }
 
 /*=============== PRODUCTS ===============*/
+.tab__btns {
+    display: flex;
+    column-gap: .75rem;
+}
+
+.tab__btn {
+    font-family: var(--second-font), serif;
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-600);
+    padding: 1rem 1.25rem 0.875rem;
+    cursor: pointer;
+    color: var(--title-color);
+    background-color: var(--container-color);
+}
+
+.products__container {
+    grid-template-columns: repeat(4, 1fr);
+}
 
 /* Active Tab */
+.tab__btn.active-tab {
+    color: var(--first-color);
+    background-color: var(--second-color);
+}
 
 /* Product Hover */
 
