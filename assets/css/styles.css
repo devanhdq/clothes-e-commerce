@@ -69,10 +69,10 @@
 input,
 textarea,
 body {
-    color: var(--text-color);
-    font-family: var(--body-font);
+    font-family: var(--body-font), serif;
     font-size: var(--normal-font-size);
     font-weight: var(--weight-400);
+    color: var(--text-color);
 }
 
 body {
@@ -83,9 +83,9 @@ h1,
 h2,
 h3,
 h4 {
-    color: var(--title-color);
-    font-family: var(--second-font);
+    font-family: var(--second-font), serif;
     font-weight: var(--weight-600);
+    color: var(--title-color);
 }
 
 ul {
@@ -107,36 +107,45 @@ img {
 button,
 textarea,
 input {
-    background-color: transparent;
     border: none;
     outline: none;
+    background-color: transparent;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-    margin-inline: auto;
     max-width: 1320px;
+    margin-inline: auto;
     padding-inline: .75rem;
 }
 
 .form__input {
-    border: 1px solid var(--border-color-alt);
-    border-radius: .25rem;
     font-size: var(--small-font-size);
     height: 45px;
+    border: 1px solid var(--border-color-alt);
+    border-radius: .25rem;
     padding-inline: 1rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section--lg {
+    padding-block: 4rem;
 }
 
 /*=============== HEADER & NAV ===============*/
 .header__top {
-    background-color: var(--first-color-alt);
     border-bottom: 1px solid var(--first-color);
+    background-color: var(--first-color-alt);
     padding-block: 0.875rem;
 }
 
 .header__container {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -151,8 +160,8 @@ input {
 }
 
 .header__alert-news {
-    color: var(--text-color-light);
     font-weight: var(--weight-600);
+    color: var(--text-color-light);
 }
 
 .header__top-action {
@@ -167,14 +176,14 @@ input {
 .nav__menu,
 .nav__list,
 .header__user-actions {
-    align-items: center;
     display: flex;
+    align-items: center;
 }
 
 .nav {
-    column-gap: 1rem;
-    height: calc(var(--header-height) + 2.5rem);
     justify-content: space-between;
+    height: calc(var(--header-height) + 2.5rem);
+    column-gap: 1rem;
 }
 
 .nav__logo-img {
@@ -182,19 +191,19 @@ input {
 }
 
 .nav__menu {
-    margin-left: 2.5rem;
     width: 100%;
+    margin-left: 2.5rem;
 }
 
 .nav__list {
-    column-gap: 2.5rem;
     margin-right: auto;
+    column-gap: 2.5rem;
 }
 
 .nav__link {
-    color: var(--title-color);
     font-weight: var(--weight-700);
     transition: all 0.2s var(--transition);
+    color: var(--title-color);
 }
 
 .header__search {
@@ -208,10 +217,10 @@ input {
 }
 
 .search__btn {
-    cursor: pointer;
     position: absolute;
-    right: 1.25rem;
     top: 24%;
+    right: 1.25rem;
+    cursor: pointer;
 }
 
 .header__user-actions {
@@ -226,13 +235,56 @@ input {
     width: 30px;
 }
 
+.header__action-btn .count {
+    font-size: var(--tiny-font-size);
+    line-height: 18px;
+    position: absolute;
+    top: -0.625rem;
+    right: -0.625rem;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    color: var(--body-color);
+    border-radius: 50%;
+    background-color: var(--first-color);
+}
+
 /* Active link */
 .active-link,
 .nav__link:hover {
     color: var(--first-color);
 }
 
+
 /*=============== HOME ===============*/
+.home__container {
+    align-items: center;
+    grid-template-columns: 5fr 7fr;
+}
+
+.home__subtitle,
+.home__description {
+    font-size: var(--large-font-size);
+}
+
+.home__subtitle {
+    font-family: var(--second-font), serif;
+    font-weight: var(--weight-600);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.home__title {
+    font-size: var(--h1-font-size);
+    font-weight: var(--weight-700);
+    line-height: 1.4;
+}
+
+.home__title span {
+    font-size: var(--big-font-size);
+    color: var(--first-color);
+
+}
 
 /*=============== BUTTONS ===============*/
 
