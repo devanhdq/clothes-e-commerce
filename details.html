@@ -1,49 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--=============== FLATICON ===============-->
-    <link rel="stylesheet" href="" />
-
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--=============== FAVICON ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+          rel="stylesheet"/>
+    
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
-
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.css"/>
+    
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+    
+    <title>Detail | E-commerce Website</title>
+</head>
+<body>
+<!--=============== HEADER ===============-->
+<header class="header">
+    <div class="header__top">
+        <div class="header__container container">
+            <div class="header__contact">
+                <span>(+84) 000 111</span>
+                <span>Our location</span>
+            </div>
+            <p class="header__alert-news">
+                Super Value Deals - Save more with coupons
+            </p>
+            <a class="header__top-action" href="login-register.html"
+            >Login / Sign Up</a
+            >
+        </div>
+    </div>
+    <nav class="nav container">
+        <a class="nav__logo" href="">
+            <img alt="" class="nav__logo-img" src="assets/img/logo.svg">
+        </a>
+        
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link " href="index.html">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link " href="accounts.html">My Account</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="compare.html">Compare</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="login-register.html">Login</a>
+                </li>
+            </ul>
+            
+            <div class="header__search">
+                <label>
+                    <input type="text" class="form__input" placeholder="Search...">
+                </label>
+                <button class="search__btn">
+                    <img src="assets/img/search.png" alt="">
+                </button>
+            </div>
+        
+        </div>
+        
+        <div class="header__user-actions">
+            <a href="wishlist.html" class="header__action-btn">
+                <img src="assets/img/icon-heart.svg" alt="">
+                <span class="count">3</span>
+            </a>
+            
+            <a href="cart.html" class="header__action-btn">
+                <img src="assets/img/icon-cart.svg" alt="">
+                <span class="count">3</span>
+            </a>
+        </div>
+    
+    </nav>
+</header>
 
-    <title>Ecommerce Website</title>
-  </head>
-  <body>
-    <!--=============== HEADER ===============-->
-    <header class="header"></header>
+<!--=============== MAIN ===============-->
+<main class="main">
+    <!--=============== BREADCRUMB ===============-->
+    <section class="breadcrumb">
+        <div class="breadcrumb__list flex container">
+            <li>
+                <a href="index.html" class="breadcrumb__link">Home</a>
+            </li>
+            <li><span class="breadcrumb__link">/</span></li>
+            <li>
+                <span class="breadcrumb__link">Fashion</span>
+            </li>
+            <li><span class="breadcrumb__link">/</span></li>
+            <li>
+                <span class="breadcrumb__link">Henley Shirt</span>
+            </li>
+        </div>
+    </section>
+    
+    <!--=============== DETAILS ===============-->
+    <section class="details section--lg">
+        <div class="details__container container grid">
+            <div class="detail__group">
+                <img src="/assets/img/product-8-1.jpg" alt="" class="details__img">
+                <div class="details__small-images grid">
+                    <img src="/assets/img/product-8-2.jpg" alt="" class="details__small-img">
+                    <img src="/assets/img/product-8-1.jpg" alt="" class="details__small-img">
+                    <img src="/assets/img/product-8-2.jpg" alt="" class="details__small-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--=============== DETAILS TAB ===============-->
+    <section class="details__tab"></section>
+    
+    <!--=============== PRODUCTS ===============-->
+    <section class="products"></section>
+    
+    
+    <!--=============== NEWSLETTER ===============-->
+    <section class="newsletter section home__newsletter">
+        <div class="newsletter__container container grid">
+            <h3 class="newsletter__title flex">
+                <img src="/assets/img/icon-email.svg"
+                     alt=""
+                     class="newsletter__icon">
+                Sign up to Newsletter
+            </h3>
+            <p class="newsletter__description">
+                ...and receive $25 coupon for first shopping.
+            </p>
+            <form action="" class="newsletter__form">
+                <input type="text" class="newsletter__input" placeholder="Enter your email">
+                <button type="submit" class="newsletter__btn">Subscriber</button>
+            </form>
+        </div>
+    </section>
+</main>
 
-    <!--=============== MAIN ===============-->
-    <main class="main">
-      <!--=============== BREADCRUMB ===============-->
-      <section class="breadcrumb"></section>
 
-      <!--=============== DETAILS ===============-->
-      <section class="details"></section>
+<!--=============== FOOTER ===============-->
+<footer class="footer container">
+    <div class="footer__container grid">
+        <div class="footer__content">
+            <a href="index.html" class="footer__logo">
+                <img src="/assets/img/logo.svg" alt="" class="footer__logo-img">
+            </a>
+            <h4 class="footer__subtitle">Contact</h4>
+            <p class="footer__description">
+                <span>Address:</span> 562 Wellington Road, Street 32, San Francisco
+            </p>
+            
+            <p class="footer__description">
+                <span>Phone:</span> (+84) 123 123
+            </p>
+            
+            <p class="footer__description">
+                <span>Hours:</span> 10:00 - 18:00, Mon - Sat
+            </p>
+            <div class="footer__social">
+                <h4 class="footer__subtitle">Follow me</h4>
+                
+                <div class="footer__social-links flex">
+                    <a href="">
+                        <img class="footer__social-icon"
+                             src="/assets/img/icon-facebook.svg"
+                             alt="">
+                    </a>
+                    
+                    <a href="">
+                        <img class="footer__social-icon"
+                             src="/assets/img/icon-instagram.svg"
+                             alt="">
+                    </a>
+                    
+                    <a href="">
+                        <img class="footer__social-icon"
+                             src="/assets/img/icon-twitter.svg"
+                             alt="">
+                    </a>
+                    
+                    <a href="">
+                        <img class="footer__social-icon"
+                             src="/assets/img/icon-youtube.svg"
+                             alt="">
+                    </a>
+                    
+                    <a href="">
+                        <img class="footer__social-icon"
+                             src="/assets/img/icon-pinterest.svg"
+                             alt="">
+                    </a>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="footer__content"><h3 class="footer__title">Address</h3>
+            <ul class="footer__links">
+                <li><a href="" class="footer__link">About us</a></li>
+                <li><a href="" class="footer__link">Delivery Information</a></li>
+                <li><a href="" class="footer__link">Privacy Policy</a></li>
+                <li><a href="" class="footer__link">Term & Conditions</a></li>
+                <li><a href="" class="footer__link">Contact us</a></li>
+                <li><a href="" class="footer__link">Support Center</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer__content"><h3 class="footer__title">My Account</h3>
+            <ul class="footer__links">
+                <li><a href="" class="footer__link">Sign In</a></li>
+                <li><a href="" class="footer__link">View Cart</a></li>
+                <li><a href="" class="footer__link">My Wishlist</a></li>
+                <li><a href="" class="footer__link">Track My Order</a></li>
+                <li><a href="" class="footer__link">Help</a></li>
+                <li><a href="" class="footer__link">Order</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer__content">
+            <h3 class="footer__title">My account</h3>
+            <img src="/assets/img/payment-method.png" alt="" class="payment__img">
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <p class="copyright">
+            &copy; 2023. All right reserve
+        </p>
+        <span class="designer">By anh quang dev</span>
+    </div>
+</footer>
 
-      <!--=============== DETAILS TAB ===============-->
-      <section class="details__tab"></section>
+<!--=============== SWIPER JS ===============-->
+<script src="/assets/js/swiper-bundle.js"></script>
 
-      <!--=============== PRODUCTS ===============-->
-      <section class="products"></section>
-
-      <!--=============== NEWSLETTER ===============-->
-      <section class="newsletter"></section>
-    </main>
-
-    <!--=============== FOOTER ===============-->
-    <footer class="footer"></footer>
-
-    <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src=""></script>
-  </body>
+<!--=============== MAIN JS ===============-->
+<script src="/assets/js/main.js"></script>
+</body>
 </html>
